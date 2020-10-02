@@ -32,7 +32,7 @@ main{
 }
 
 .msg-output{
-    border: 1px solid white;
+    border: 1px solid black;
     border-radius: 10px;
     margin: 10px auto;
     width: 870px;
@@ -70,4 +70,9 @@ main{
     width: 400px;
     margin: 0 auto;
     height: 40px;
+}
+
+.msg-text{
+    border-top: 1px solid black;
+    padding-left: 20px;
 }
