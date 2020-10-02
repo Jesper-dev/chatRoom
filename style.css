@@ -3,7 +3,7 @@ body{
     height: 100%;
     margin: 0%;
     padding: 0%;
-    background-color: #70018f;
+    background-color: #687cff;
 
     font-family: 'Merriweather', serif;
 }
@@ -23,30 +23,50 @@ main{
 }
 
 .container{
-    background-color: #8e00b6;
+    background-color: #cccbc7;
     margin: 0 auto;
     width: 900px;
     height: 720px;
     margin-top: 50px;
-    border: 1px solid black;
+    border: 2px solid black;
 }
 
 .msg-output{
     border: 1px solid white;
+    border-radius: 10px;
     margin: 10px auto;
     width: 870px;
     height: 650px;
+
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+*:focus{
+    outline: none;
 }
 
 .msg-input{
-    border: 1px solid blue;
     margin: 0 auto;
     width: 870px;
     height: 40px;
 }
 
+::placeholder{
+    color: black;
+}
+
+#msg{
+    width: 250px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: #c3c3c3;;
+    color: black;
+    margin-right: 50px;
+}
+
 .msg-container{
-    border: 1px solid green;
     width: 400px;
     margin: 0 auto;
     height: 40px;
