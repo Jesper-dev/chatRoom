@@ -8,12 +8,13 @@ const msg = document.querySelector("#msg");
 const form = document.querySelector("form");
 let msgOutput = document.querySelector(".msg-output");
 
+//* Adda message to msgOutput div
+function addMsg(msgValue, timeDiffer, differ, now){
 
-
-function addMsg(msgValue){
     let html = `
         <div class = "msg-text">
             <p>${msgValue}</p>
+            <span>${timeDiffer}</span>
         </div>
     `;
 
@@ -25,9 +26,12 @@ function addMsg(msgValue){
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-
+    
+    let now = new Date();
+    let differ = new Date();
+    let timeDiffer = dateFns.distanceInWords(differ, now, {addSuffix: true});
     let msgValue = form.msg.value;
 
-    addMsg(msgValue);
+    addMsg(msgValue, timeDiffer, differ, now);
     form.reset();
-})
+});

@@ -75,4 +75,12 @@ main{
 .msg-text{
     border-top: 1px solid black;
     padding-left: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.msg-text span{
+    margin: 16px;
 }
