@@ -84,3 +84,7 @@ main{
 .msg-text span{
     margin: 16px;
 }
+
+.error{
+    border: 1px solid red !important;
+}
