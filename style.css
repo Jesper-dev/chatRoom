@@ -9,10 +9,10 @@ body{
 }
 
 header{
-    border: 1px solid black;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: center;
+    align-items: center;
     color: #f0f0f0;
     font-size: 22px;
 }
@@ -22,11 +22,15 @@ main{
     height: 100%;
 }
 
+.hide{
+    display: none !important;
+}
+
 .container{
     background-color: #cccbc7;
     margin: 0 auto;
     width: 900px;
-    height: 720px;
+    height: 740px;
     margin-top: 50px;
     border: 2px solid black;
 }
@@ -37,7 +41,7 @@ main{
     margin: 10px auto;
     width: 870px;
     height: 650px;
-
+   
     display: flex;
     flex-direction: column-reverse;
 }
@@ -74,8 +78,9 @@ main{
 
 .msg-text{
     border-top: 1px solid black;
+    border-radius: 8px;
     padding-left: 20px;
-
+    background-color: #a5a4a1;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -86,5 +91,19 @@ main{
 }
 
 .error{
-    border: 2px solid red !important;
+    border: 2px solid crimson !important;
+}
+
+.hideBtn{
+    padding: 2px;
+    background-color: crimson;
+    border: 1px solid black;
+    float: right;
+}
+.showBtn{
+    height: 30px;
+    padding: 5px;
+    background-color: green;
+    border: 1px solid black;
+    float: right;
 }

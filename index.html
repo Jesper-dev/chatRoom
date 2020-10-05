@@ -1,36 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat Room</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
-    <script src="main.js" defer></script>  
+    <script src="main.js" defer></script>
 </head>
+
 <body>
     <header>
         <h1>CHAT!</h1>
+        <button class="showBtn hide">Show chat!</button>
     </header>
+
     <main>
         <div class="container">
+            <button class="hideBtn">X</button>
             <div class="msg-output">
-                
             </div>
             <div class="msg-input">
                 <div class="msg-container">
                     <form>
-                        <input type="text"  id="msg" name="msg" placeholder="Write your message here...">
+                        <input type="text" id="msg" name="msg" placeholder="Write your message here...">
                         <input type="submit" id="submit" value="SEND">
                     </form>
-                    
+
                 </div>
             </div>
-            
+
         </div>
     </main>
 
-<!-- Date-fns library -->
-<script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
+    <!-- Date-fns library -->
+    <script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
 </body>
+
 </html>

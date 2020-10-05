@@ -2,6 +2,9 @@ function clg(object) {
     console.log(object);
 }
 
+const showBtn = document.querySelector(".showBtn")
+const hideBtn = document.querySelector(".hideBtn");
+const container = document.querySelector(".container")
 //* Grab the msg input and submit and form
 const msg = document.querySelector("#msg");
 // const submit = document.querySelector("#submit");
@@ -36,10 +39,10 @@ form.addEventListener("submit", (e) => {
         msgInput.classList.add("error");
     } else {
         let msgValue = form.msg.value;
-        msgInput.classList.remove("error");
         addMsg(msgValue);
+        msgInput.classList.remove("error");
     }
-
+    msgInput.classList.remove("error");
     form.reset();
 });
 
@@ -51,4 +54,13 @@ form.addEventListener("keyup", () => {
     }
 });
 
+showBtn.addEventListener("click", () => {
+    container.classList.remove("hide");
+    showBtn.classList.add("hide");
+});
+
+hideBtn.addEventListener("click", () => {
+    container.classList.add("hide");
+    showBtn.classList.remove("hide");
+});
 
