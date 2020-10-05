@@ -10,18 +10,20 @@ let msgOutput = document.querySelector(".msg-output");
 let msgInput = document.querySelector("#msg");
 
 
+//* TIME STUFF *//
+
 
 //* Adda message to msgOutput div
-function addMsg(msgValue, timeDiffer, differ, now) {
+function addMsg(msgValue) {
 
     let html = `
         <div class = "msg-text">
             <p>${msgValue}</p>
-            <span>${timeDiffer}</span>
+            <span></span>
         </div>
     `;
 
-    //*Add the html to the msgOutput.
+    //* Add the html to the msgOutput.
     //* Adds it to the start/begining of the parent div (div in this case, can be child of anything)
     msgOutput.insertAdjacentHTML("afterbegin", html)
 
@@ -33,13 +35,9 @@ form.addEventListener("submit", (e) => {
     if (msgInput.value == "") {
         msgInput.classList.add("error");
     } else {
-        msgInput.classList.remove("error");
-        let now = new Date();
-        let differ = new Date();
-        let timeDiffer = dateFns.distanceInWords(differ, now, { addSuffix: true });
         let msgValue = form.msg.value;
-
-        addMsg(msgValue, timeDiffer, differ, now);
+        msgInput.classList.remove("error");
+        addMsg(msgValue);
     }
 
     form.reset();
@@ -48,7 +46,9 @@ form.addEventListener("submit", (e) => {
 form.addEventListener("keyup", () => {
     if (msgInput.value == "") {
         msgInput.classList.add("error");
-    }else{
+    } else {
         msgInput.classList.remove("error");
     }
 });
+
+
