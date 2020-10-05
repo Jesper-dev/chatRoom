@@ -48,5 +48,7 @@ form.addEventListener("submit", (e) => {
 form.addEventListener("keyup", () => {
     if (msgInput.value == "") {
         msgInput.classList.add("error");
+    }else{
+        msgInput.classList.remove("error");
     }
 });
