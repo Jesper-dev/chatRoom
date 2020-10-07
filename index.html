@@ -8,16 +8,18 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
     <script src="chat.js" defer></script>
+    <script src="addUsers.js" defer></script>
 </head>
 
 <body>
     <header>
-        <h1>CHAT!</h1>
+        <h1>CHAT! room</h1>
         <button class="showBtn hide">Show chat!</button>
     </header>
 
     <main>
-        <div class="container">
+        <!-- Remeber to remove hide class -->
+        <div class="containerMsg hide">
             <button class="hideBtn">X</button>
             <div class="msg-output">
             </div>
@@ -30,7 +32,21 @@
 
                 </div>
             </div>
+        </div>
 
+        <div class="containerAddFriend">
+            <form>
+                <div class="nameFriend">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+
+                <div class="descFriend">
+                    <label for="desc">Description:</label>
+                    <textarea name="desc" id="desc" cols="15" rows="6"></textarea>
+                </div>
+
+            </form>
         </div>
     </main>
 

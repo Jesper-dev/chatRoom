@@ -4,7 +4,7 @@ function clg(object) {
 
 const showBtn = document.querySelector(".showBtn")
 const hideBtn = document.querySelector(".hideBtn");
-const container = document.querySelector(".container")
+const container = document.querySelector(".containerMsg")
 //* Grab the msg input and submit and form
 const msg = document.querySelector("#msg");
 // const submit = document.querySelector("#submit");

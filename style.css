@@ -26,7 +26,7 @@ main{
     display: none !important;
 }
 
-.container{
+.containerMsg{
     background-color: #cccbc7;
     margin: 0 auto;
     width: 900px;
@@ -106,4 +106,27 @@ main{
     background-color: green;
     border: 1px solid black;
     float: right;
+}
+
+
+/*=============================================
+=             Style for "Add friend"          =
+=============================================*/
+
+.containerAddFriend{
+    border: 1px solid black;
+    width: 250px;
+    height: 150px;
+    margin: auto 50px;
+    background-color: #9daaff;
+}
+
+.nameFriend label{
+    border: 1px solid black;
+    
+}
+
+.descFriend label{
+    border: 1px solid black;
+    
 }
