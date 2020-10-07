@@ -6,10 +6,22 @@ class Friend {
     }
 }
 
-const friend1 = new Friend("Jesper", "An Awesome Guy");
-const friend2 = new Friend("Ella", "More Awesome than Jesper");
+let friendArr = [];
 
+//*Get input fields
+const name = document.querySelector("#name");
+const desc = document.querySelector("textarea");
 
-let arr = [];
+const formFriend = document.querySelector(".friendForm")
 
-arr.push(friend1, friend2);
+formFriend.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    let nameValue = formFriend.name.value;
+    let descValue = formFriend.desc.value;
+
+    let newFriend = new Friend(nameValue, descValue);
+    friendArr.push(newFriend);
+
+    formFriend.reset();
+});

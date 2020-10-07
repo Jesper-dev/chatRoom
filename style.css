@@ -116,17 +116,28 @@ main{
 .containerAddFriend{
     border: 1px solid black;
     width: 250px;
-    height: 150px;
+    height: 180px;
     margin: auto 50px;
     background-color: #9daaff;
+
+    display: flex;
+    flex-direction: column;
 }
 
-.nameFriend label{
-    border: 1px solid black;
-    
-}
-
+.nameFriend label,
 .descFriend label{
-    border: 1px solid black;
-    
+    padding-right: 50px;
+}
+
+.nameFriend ,
+.descFriend{
+    padding-left: 10px;
+}
+
+textarea{
+    resize: none;
+}
+
+.addBtn{
+    margin-left: 10px;
 }
