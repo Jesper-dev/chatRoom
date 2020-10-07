@@ -14,7 +14,11 @@
 <body>
     <header>
         <h1>CHAT! room</h1>
-        <button class="showBtn hide">Show chat!</button>
+        <div class="btn-wrapper-header">
+            <button class="showBtn">Show chat!</button>
+            <button class="addFriendBtn">Add Friends!</button>
+        </div>
+
     </header>
 
     <main>
@@ -34,7 +38,7 @@
             </div>
         </div>
 
-        <div class="containerAddFriend">
+        <div class="containerAddFriend hide">
             <form class="friendForm">
                 <div class="nameFriend">
                     <label for="name">Name:</label>
@@ -46,7 +50,7 @@
                     <textarea name="desc" id="desc" cols="20" rows="5"></textarea>
                 </div>
                 <div>
-                    <button class="addBtn" type="submit">Add Friend</button>
+                    <button class="submitAddBtn" type="submit">Add Friend</button>
                 </div>
 
             </form>

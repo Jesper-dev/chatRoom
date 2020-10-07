@@ -20,8 +20,21 @@ formFriend.addEventListener("submit", (e) => {
     let nameValue = formFriend.name.value;
     let descValue = formFriend.desc.value;
 
-    let newFriend = new Friend(nameValue, descValue);
+    newFriend = new Friend(nameValue, descValue);
+
     friendArr.push(newFriend);
+
+    localStorage.setItem("Friends", JSON.stringify(friendArr));
 
     formFriend.reset();
 });
+
+//TODO: Jag ska fixa så att man kan ta data från local storage och visa uppd det
+//TODO: Alltså man ska kunna se sina vänner
+
+//! Måste parse på friendArr sen när jag ska skriva ut den
+
+
+
+
+

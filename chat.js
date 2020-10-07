@@ -4,7 +4,10 @@ function clg(object) {
 
 const showBtn = document.querySelector(".showBtn")
 const hideBtn = document.querySelector(".hideBtn");
+const addFriendBtnShow = document.querySelector(".addFriendBtn");
 const container = document.querySelector(".containerMsg")
+const addFriendContainer = document.querySelector(".containerAddFriend");
+
 //* Grab the msg input and submit and form
 const msg = document.querySelector("#msg");
 // const submit = document.querySelector("#submit");
@@ -63,3 +66,7 @@ hideBtn.addEventListener("click", () => {
     showBtn.classList.remove("hide");
 });
 
+addFriendBtnShow.addEventListener("click", () => {
+    addFriendBtnShow.classList.add("hide");
+    addFriendContainer.classList.remove("hide");
+});

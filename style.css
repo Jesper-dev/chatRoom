@@ -17,6 +17,11 @@ header{
     font-size: 22px;
 }
 
+.btn-wrapper-header{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
 main{
     width: 99%;
     height: 100%;
@@ -103,6 +108,7 @@ main{
 .showBtn{
     height: 30px;
     padding: 5px;
+    margin-right: 50px;
     background-color: green;
     border: 1px solid black;
     float: right;
@@ -138,6 +144,6 @@ textarea{
     resize: none;
 }
 
-.addBtn{
+.submitAddBtn{
     margin-left: 10px;
 }
