@@ -13,8 +13,7 @@ let msgOutput = document.querySelector(".msg-output");
 let msgInput = document.querySelector("#msg");
 
 
-//* TIME STUFF *//
-
+//****** TIME STUFF *******//
 
 //* Adda message to msgOutput div
 function addMsg(msgValue) {
