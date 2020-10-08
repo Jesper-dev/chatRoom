@@ -17,14 +17,18 @@ header{
     font-size: 22px;
 }
 
-.btn-wrapper-header{
-    display: flex;
-    flex-flow: row nowrap;
-}
+
 
 main{
     width: 99%;
     height: 100%;
+}
+
+.flex-container{
+    display: flex;
+    flex-flow: row-reverse wrap;
+
+    justify-content: center;
 }
 
 .hide{
@@ -99,6 +103,12 @@ main{
     border: 2px solid crimson !important;
 }
 
+.btn-wrapper-header{
+    display: flex;
+    flex-flow: row nowrap;
+    height: 30px;
+}
+
 .hideBtnMsg{
     padding: 2px;
     background-color: crimson;
@@ -107,21 +117,25 @@ main{
     width: 20px;
 }
 
+
+.showBtnMsg{
+    height: 30px;
+    background-color: green;
+    border: 1px solid black;
+}
+
+.addFriendBtnShow{
+    margin-left: 50px;
+    background-color: green;
+    border: 1px solid black;
+}
+
 .addFriendBtnHide{
     padding: 2px;
     background-color: crimson;
     border: 1px solid black;
     float: left;
     width: 20px;
-}
-
-.showBtnMsg{
-    height: 30px;
-    padding: 5px;
-    margin-right: 50px;
-    background-color: green;
-    border: 1px solid black;
-    float: right;
 }
 
 
@@ -133,7 +147,7 @@ main{
     border: 1px solid black;
     width: 250px;
     height: 200px;
-    margin: auto 50px;
+    margin: 50px 50px;
     background-color: #9daaff;
 
     display: flex;
