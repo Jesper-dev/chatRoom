@@ -13,8 +13,17 @@ header{
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+    
+}
+
+header h1{
     color: #f0f0f0;
-    font-size: 22px;
+    font-size: 40px;
+}
+
+header span{
+    color: greenyellow;
+    font-size: 55px;
 }
 
 main{
