@@ -15,46 +15,49 @@
     <header>
         <h1>CHAT! room</h1>
         <div class="btn-wrapper-header">
-            <button class="showBtn">Show chat!</button>
-            <button class="addFriendBtn">Add Friends!</button>
+            <button class="showBtnMsg">Show chat!</button>
+            <button class="addFriendBtnShow">Add Friends!</button>
         </div>
 
     </header>
 
     <main>
-        <!-- Remeber to remove hide class -->
-        <div class="containerMsg hide">
-            <button class="hideBtn">X</button>
-            <div class="msg-output">
-            </div>
-            <div class="msg-input">
-                <div class="msg-container">
-                    <form>
-                        <input type="text" id="msg" name="msg" placeholder="Write your message here...">
-                        <input type="submit" id="submit" value="SEND">
-                    </form>
-
+        <div class="flex-container">
+            <div class="containerMsg hide">
+                <button class="hideBtnMsg">X</button>
+                <div class="msg-output">
                 </div>
+                <div class="msg-input">
+                    <div class="msg-container">
+                        <form>
+                            <input type="text" id="msg" name="msg" placeholder="Write your message here...">
+                            <input type="submit" id="submit" value="SEND">
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="containerAddFriend hide">
+                <button class="addFriendBtnHide">X</button>
+                <form class="friendForm">
+                    <div class="nameFriend">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+
+                    <div class="descFriend">
+                        <label for="desc">Description:</label>
+                        <textarea name="desc" id="desc" cols="20" rows="5"></textarea>
+                    </div>
+                    <div>
+                        <button class="submitAddBtn" type="submit">Add Friend</button>
+                    </div>
+
+                </form>
             </div>
         </div>
 
-        <div class="containerAddFriend hide">
-            <form class="friendForm">
-                <div class="nameFriend">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name">
-                </div>
-
-                <div class="descFriend">
-                    <label for="desc">Description:</label>
-                    <textarea name="desc" id="desc" cols="20" rows="5"></textarea>
-                </div>
-                <div>
-                    <button class="submitAddBtn" type="submit">Add Friend</button>
-                </div>
-
-            </form>
-        </div>
     </main>
 
     <!-- Date-fns library -->

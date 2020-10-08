@@ -2,9 +2,10 @@ function clg(object) {
     console.log(object);
 }
 
-const showBtn = document.querySelector(".showBtn")
-const hideBtn = document.querySelector(".hideBtn");
-const addFriendBtnShow = document.querySelector(".addFriendBtn");
+const showBtnMsg = document.querySelector(".showBtnMsg")
+const hideBtnMsg = document.querySelector(".hideBtnMsg");
+const addFriendBtnShow = document.querySelector(".addFriendBtnShow");
+const addFriendBtnHide = document.querySelector(".addFriendBtnHide");
 const container = document.querySelector(".containerMsg")
 const addFriendContainer = document.querySelector(".containerAddFriend");
 
@@ -56,17 +57,25 @@ form.addEventListener("keyup", () => {
     }
 });
 
-showBtn.addEventListener("click", () => {
+showBtnMsg.addEventListener("click", () => {
     container.classList.remove("hide");
-    showBtn.classList.add("hide");
+    showBtnMsg.classList.add("hide");
 });
 
-hideBtn.addEventListener("click", () => {
+hideBtnMsg.addEventListener("click", () => {
     container.classList.add("hide");
-    showBtn.classList.remove("hide");
+    showBtnMsg.classList.remove("hide");
 });
 
 addFriendBtnShow.addEventListener("click", () => {
     addFriendBtnShow.classList.add("hide");
     addFriendContainer.classList.remove("hide");
 });
+
+addFriendBtnHide.addEventListener("click", () => {
+    addFriendContainer.classList.add("hide");
+    addFriendBtnShow.classList.remove("hide");
+
+})
+
+clg(addFriendContainer)
