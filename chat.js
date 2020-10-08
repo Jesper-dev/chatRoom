@@ -4,10 +4,16 @@ function clg(object) {
 
 const showBtnMsg = document.querySelector(".showBtnMsg")
 const hideBtnMsg = document.querySelector(".hideBtnMsg");
+
 const addFriendBtnShow = document.querySelector(".addFriendBtnShow");
 const addFriendBtnHide = document.querySelector(".addFriendBtnHide");
+
+const showFriendsBtnShow = document.querySelector(".showFriendsBtnShow");
+const showFriendsBtnHide = document.querySelector(".showFriendsBtnHide");
+
 const container = document.querySelector(".containerMsg")
 const addFriendContainer = document.querySelector(".containerAddFriend");
+const showFriendsContainer = document.querySelector(".showFriendsContainer")
 
 //* Grab the msg input and submit and form
 const msg = document.querySelector("#msg");
@@ -76,6 +82,15 @@ addFriendBtnHide.addEventListener("click", () => {
     addFriendContainer.classList.add("hide");
     addFriendBtnShow.classList.remove("hide");
 
-})
+});
 
-clg(addFriendContainer)
+showFriendsBtnShow.addEventListener("click", () => {
+    showFriendsBtnShow.classList.add("hide");
+    showFriendsContainer.classList.remove("hide");
+
+});
+
+showFriendsBtnHide.addEventListener("click", () => {
+    showFriendsContainer.classList.add("hide");
+    showFriendsBtnShow.classList.remove("hide");
+});
