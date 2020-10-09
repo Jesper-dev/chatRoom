@@ -197,6 +197,13 @@ textarea{
     margin: 50px 50px;
 }
 
+.friendsWrapper{
+    width: 450px;
+    height: 450px;
+    margin: 20px auto;
+    border: 1px solid white;
+}
+
 .showFriendsBtnShow{
     margin-left: 50px;
     background-color: green;

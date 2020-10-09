@@ -8,11 +8,14 @@ class Friend {
 
 let friendArr = [];
 
+
 //*Get input fields
 const name = document.querySelector("#name");
 const desc = document.querySelector("textarea");
 
 const formFriend = document.querySelector(".friendForm")
+
+let friendsWrapper = document.querySelector(".friendsWrapper");
 
 formFriend.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -29,12 +32,5 @@ formFriend.addEventListener("submit", (e) => {
     formFriend.reset();
 });
 
-//TODO: Jag ska fixa så att man kan ta data från local storage och visa uppd det
-//TODO: Alltså man ska kunna se sina vänner
-
-//! Måste parse på friendArr sen när jag ska skriva ut den
-
-
-
-
-
+//!Kanske behöver göra en custom string template med allting från object friend, eller så måste jag göra om hela koden
+//!Vi får se :)
