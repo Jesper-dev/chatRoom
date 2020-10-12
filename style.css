@@ -1,0 +1,38 @@
+body{
+    background-color: #23a0ff;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    flex: 0 0 100px;
+    text-transform: uppercase;    
+    
+    
+}
+
+header > h1{
+    color: #155b91;
+    font-size: 36px;
+    text-shadow: 2px 2px #ffffff;
+}
+
+header > h1 > span{
+    color: #ffffff;
+    font-size: 46px;
+    animation: colorPulse 2s ease-in-out infinite alternate;
+   
+    
+}
+
+@keyframes colorPulse{
+    0%{
+        color: #ffffff;
+        text-shadow: 2px 2px #000000;      
+    }
+
+    100%{
+        color: #155b91;
+        text-shadow: 2px 2px #ffffff;       
+    }
+}
