@@ -1,0 +1,24 @@
+{
+  "name": "chatroom",
+  "version": "1.0.0",
+  "description": "Started over 2020-10-12 16.02",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JesperKYH/chatRoom.git"
+  },
+  "author": "Jesper Pettersson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JesperKYH/chatRoom/issues"
+  },
+  "homepage": "https://github.com/JesperKYH/chatRoom#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5"
+  }
+}
