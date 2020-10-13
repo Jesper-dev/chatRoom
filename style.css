@@ -62,6 +62,52 @@ header > h1 > span{
     
 }
 
+
+/*=============================================
+=            main content on page            =
+=============================================*/
+
+.menu{
+    border: 1px solid black;
+    width: 500px;
+    height: 400px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+
+
+button{
+    height: 50px;
+    width: 200px;
+    outline: none;
+    border: 2px solid #155b91;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-size: 24px;
+    background-color:  #30ff02;
+    color: #155b91;
+}
+
+button:hover{
+    /* width: 300px;
+    transition: width 1s;
+    cursor: pointer;*/
+
+    animation: btnHover 1s alternate forwards;
+}
+
+@keyframes btnHover{
+    from{
+        width: 200px;
+    }
+    to{
+        width: 400px;
+    }
+}
+
+
 @keyframes colorPulse{
     0%{
         color: #30ff02;
