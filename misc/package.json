@@ -4,7 +4,7 @@
   "description": "Started over 2020-10-12 16.02",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "babel_chat": "node_modules/.bin/babel src/chat.js -o dist/assets/chat_after.js"
   },
   "repository": {
     "type": "git",
