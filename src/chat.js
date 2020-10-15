@@ -1,5 +1,4 @@
-const name = (name, lastname) => {
-    console.log(name, lastname);
-}
+const menu = document.querySelector(".menu")
 
-export { name }
+
+export { btns }

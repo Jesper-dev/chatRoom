@@ -1,6 +1,4 @@
-import "./chat";
-import { name } from "./chat";
+import { menu } from "./chat";
 import { user1 } from "./users";
 
-console.log(user1);
-name("Jesper", "Pettersson")
+console.log(menu);

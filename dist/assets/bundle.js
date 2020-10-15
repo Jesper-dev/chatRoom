@@ -1,1 +1,1 @@
-(()=>{"use strict";var s=new function s(e,n,t,o){!function(s,e){if(!(s instanceof e))throw new TypeError("Cannot call a class as a function")}(this,s),this.name=e,this.nickName=n,this.age=t,this.password=o}("Jesper Pettersson","JesperNator",20,123);console.log(s),console.log("Jesper","Pettersson")})();
+(()=>{"use strict";var e=document.querySelectorAll(".btn");console.log(e),name("Jesper","Pettersson")})();
