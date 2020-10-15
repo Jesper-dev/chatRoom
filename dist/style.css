@@ -68,15 +68,25 @@ header > h1 > span{
 =============================================*/
 
 .menu{
-    border: 1px solid black;
+    border: 2px solid #155b91;
+    box-shadow: 7px 8px 10px 3px #0e3f64;
     width: 500px;
     height: 400px;
-
+    background-color: #2488d4;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
 }
 
+.xBtn-div{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.xBtn-div > a{
+    font-size: 24px;
+}
 
 button{
     height: 50px;
@@ -88,6 +98,7 @@ button{
     font-size: 24px;
     background-color:  #30ff02;
     color: #155b91;
+    box-shadow: 5px 5px 8px 3px #0e3f64;
 }
 
 button:hover{
