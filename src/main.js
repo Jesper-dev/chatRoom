@@ -1,4 +1,5 @@
-import { menu } from "./chat";
+import "./chat"
+import { buttons } from "./chat";
 import { user1 } from "./users";
 
-console.log(menu);
+

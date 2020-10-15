@@ -91,22 +91,13 @@ button{
 }
 
 button:hover{
-    /* width: 300px;
-    transition: width 1s;
-    */
     cursor: pointer;
-
-    animation: btnHover 1s alternate forwards;
+    width: 400px;
+    transition: width 1s;
+    color: #eeeeee;
+    border: 2px solid #eeeeee;
 }
 
-@keyframes btnHover{
-    from{
-        width: 200px;
-    }
-    to{
-        width: 400px;
-    }
-}
 
 
 @keyframes colorPulse{

@@ -4,7 +4,7 @@
   "description": "Started over 2020-10-12 16.02",
   "main": "index.js",
   "scripts": {
-    "build": "node_modules/.bin/webpack --mode production",
+    "build": "node_modules/.bin/webpack --mode production -w",
     "serve": "webpack serve --mode development"
   },
   "repository": {
