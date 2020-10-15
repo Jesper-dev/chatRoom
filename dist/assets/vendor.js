@@ -1,0 +1,1 @@
+new class{constructor(e,s,t){this.name=e,this.nickName=s,this.age=t}}("Jesper","JesperNator",20);
