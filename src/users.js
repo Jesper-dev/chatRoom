@@ -7,7 +7,7 @@ class Users {
     }
 };
 
-let user1 = new Users("Jesper", "JesperNator", 20, 123);
+let user1 = new Users("Jesper Pettersson", "JesperNator", 20, 123);
 
 
 
