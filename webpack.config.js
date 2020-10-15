@@ -31,13 +31,6 @@ module.exports = {
                 "style-loader",
                 "css-loader"
             ]
-        },
-        {
-            test: /\.html$/,
-            exclude: /node_modules/,
-            use: [
-                "html-loader"
-            ]
         }]
     }
 };
