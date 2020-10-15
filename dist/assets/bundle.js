@@ -1,0 +1,1 @@
+(()=>{"use strict";var t=document.querySelectorAll(".btn");!function(){for(var e=0;e<t.length;e++)t[e].addEventListener("mouseout",(function(t){t.target.classList.add("button-out")}))}()})();

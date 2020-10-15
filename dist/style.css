@@ -98,7 +98,10 @@ button:hover{
     border: 2px solid #eeeeee;
 }
 
-
+.button-out{
+    width: 200px;
+    transition: width 1s;
+}
 
 @keyframes colorPulse{
     0%{
