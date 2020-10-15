@@ -7,7 +7,7 @@
     "babel_chat": "node_modules/.bin/babel src/chat.js -w -o dist/assets/main.js",
     "babel_users": "node_modules/.bin/babel src/users.js -w -o dist/assets/vendor.js",
     "webpack": "node_modules/.bin/webpack -w",
-    "serve": "webpack-dev-server"
+    "serve": "webpack serve"
   },
   "repository": {
     "type": "git",
