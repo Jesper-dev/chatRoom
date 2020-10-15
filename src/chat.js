@@ -5,3 +5,4 @@ const name = (name) => {
 name("Jesper");
 name("Ella");
 name("Erik");
+name("Maja");

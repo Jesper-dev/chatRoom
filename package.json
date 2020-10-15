@@ -4,8 +4,8 @@
   "description": "Started over 2020-10-12 16.02",
   "main": "index.js",
   "scripts": {
-    "babel_chat": "node_modules/.bin/babel src/chat.js -w -o dist/assets/chat_after.js",
-    "babel_users": "node_modules/.bin/babel src/users.js -w -o dist/assets/users_after.js",
+    "babel_chat": "node_modules/.bin/babel src/chat.js -w -o dist/assets/bundle.js",
+    "babel_users": "node_modules/.bin/babel src/users.js -w -o dist/assets/bundle.js",
     "webpack": "node_modules/.bin/webpack"
   },
   "repository": {

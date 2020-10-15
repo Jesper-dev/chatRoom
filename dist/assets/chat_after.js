@@ -1,1 +1,0 @@
-(()=>{const l=l=>{console.log(l)};l("Jesper"),l("Ella"),l("Erik")})();
