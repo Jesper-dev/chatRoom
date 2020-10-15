@@ -6,7 +6,8 @@
   "scripts": {
     "babel_chat": "node_modules/.bin/babel src/chat.js -w -o dist/assets/main.js",
     "babel_users": "node_modules/.bin/babel src/users.js -w -o dist/assets/vendor.js",
-    "webpack": "node_modules/.bin/webpack"
+    "webpack": "node_modules/.bin/webpack -w",
+    "serve": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,10 @@
     "@babel/preset-env": "^7.11.5",
     "babel-loader": "^8.1.0",
     "webpack": "^5.1.0",
-    "webpack-cli": "^4.0.0"
-  }
+    "webpack-cli": "^4.0.0",
+    "webpack-dev-middleware": "^3.7.2",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-hot-middleware": "^2.25.0"
+  },
+  "dependencies": {}
 }
