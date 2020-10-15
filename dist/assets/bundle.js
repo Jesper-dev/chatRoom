@@ -1,0 +1,1 @@
+(()=>{"use strict";let s=new class{constructor(s,e,o,t){this.name=s,this.nickName=e,this.age=o,this.password=t}}("Jesper","JesperNator",20,123);console.log(s),console.log("Jesper")})();
