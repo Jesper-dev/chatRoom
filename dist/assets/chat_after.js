@@ -1,7 +1,1 @@
-const name = name => {
-  console.log(name);
-};
-
-name("Jesper");
-name("Ella");
-name("Erik");
+(()=>{const l=l=>{console.log(l)};l("Jesper"),l("Ella"),l("Erik")})();
