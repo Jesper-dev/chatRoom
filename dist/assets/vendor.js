@@ -1,1 +1,1 @@
-new class{constructor(e,s,t){this.name=e,this.nickName=s,this.age=t}}("Jesper","JesperNator",20);
+new class{constructor(s,e,t,a){this.name=s,this.nickName=e,this.age=t,this.password=a}}("Jesper","JesperNator",20,123);

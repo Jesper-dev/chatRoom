@@ -1,1 +1,1 @@
-(()=>{const l=l=>{console.log(l)};l("Jesper"),l("Ella"),l("Erik")})();
+(()=>{const a=a=>{console.log(a)};a("Jesper"),a("Ella"),a("Erik"),a("Maja"),a("Mamma")})();

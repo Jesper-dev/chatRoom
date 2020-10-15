@@ -2,8 +2,8 @@ const path = require("path");
 
 module.exports = {
     entry: {
-        main: "./src/chat.js",
-        vendor: "./src/users.js"
+        main: "./dist/assets/main.js",
+        vendor: "./dist/assets/vendor.js"
     },
     output: {
         path: path.resolve(__dirname, "dist/assets"),
