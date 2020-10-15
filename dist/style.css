@@ -23,6 +23,10 @@ nav{
     justify-content: flex-end;
 }
 
+.hideMe{
+    display: none !important;
+}
+
 .flex-container-nav{
     padding-top: 5px;
     width: 250px;
@@ -78,17 +82,53 @@ header > h1 > span{
     justify-content: space-around;
 }
 
-.xBtn-div{
+.menu-close{
+    width: 60px;
+    transition: all 1s;
+}
+
+.show-btn{
+    font-size: 20px;
+    width: 60px;
+    height: 40px;
+    color: #30ff02;
+    background-color: #2488d4;
+    border: 1px solid #155b91;
+    outline: none;
+}
+
+.show-btn:hover{
+    cursor: pointer;
+}
+
+.show-btn-clicked{
+    width: 500px;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.close-btn-div{
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
 }
 
-.xBtn-div > a{
+.close-btn{
     font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ff0000;
+    border: none;
+    background: none;
+    outline: none;
 }
 
-button{
+.close-btn:hover{
+    cursor: pointer;
+    color: #000000;
+}
+
+.btn{
     height: 50px;
     width: 200px;
     outline: none;
@@ -101,7 +141,7 @@ button{
     box-shadow: 5px 5px 8px 3px #0e3f64;
 }
 
-button:hover{
+.btn:hover{
     cursor: pointer;
     width: 400px;
     transition: width 1s;
@@ -109,7 +149,7 @@ button:hover{
     border: 2px solid #eeeeee;
 }
 
-.button-out{
+.btn-out{
     width: 200px;
     transition: width 1s;
 }
