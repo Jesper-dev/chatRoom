@@ -8,3 +8,5 @@ class Users {
 };
 
 let user1 = new Users("Jesper", "JesperNator", 20, 123);
+
+console.log(user1);

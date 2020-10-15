@@ -1,1 +1,1 @@
-new class{constructor(s,e,t,a){this.name=s,this.nickName=e,this.age=t,this.password=a}}("Jesper","JesperNator",20,123);
+(()=>{let s=new class{constructor(s,e,t,o){this.name=s,this.nickName=e,this.age=t,this.password=o}}("Jesper","JesperNator",20,123);console.log(s)})();
