@@ -1,6 +1,6 @@
-import "../dist/style.css"
-import "./chat";
-import { btnsEvent, closeBtnEvent, showMenuEvent } from "./chat";
+
+import "./menu";
+import { btnsEvent, closeBtnEvent, showMenuEvent } from "./menu";
 import { user1 } from "./users";
 
 

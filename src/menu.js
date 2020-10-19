@@ -1,3 +1,5 @@
+import "../dist/style.css"
+
 const btns = document.querySelectorAll(".btn");
 const closeBtn = document.querySelector(".close-btn");
 const showBtn = document.querySelector(".show-btn");
