@@ -34,7 +34,8 @@ main{
 
 .content-wrapper{
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
+    flex: 1 1 100px;
     width: 100%;
     height: 100%;
 }
@@ -290,10 +291,125 @@ header > h1 > span{
 
 
 /* Css style for closing the chat anim */
-.close-chat{
-    width: 50px;
-    height: 50px;
-    transition: all 1s;
+.close-tab{
+    width: 50px !important;
+    height: 50px !important;
+    transition: all 1s !important;
+}
+
+
+/*=============================================
+=             Friends css style               =
+=============================================*/
+
+.friends-wrapper{
+    width: 500px;
+    height: 520px;
+    margin: 0 auto;
+    border: 2px solid #155b91;
+    border-radius: 10px;
+    background-color: #2488d4;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.friends-window{
+    width: 450px;
+    height: 450px;
+    border: 3px solid #155b91;
+    background-color: #2ea2fb;
+    overflow: auto;
+}
+
+.close-btn-friends-div{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+.close-btn-friends{
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ff0000;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.close-btn-friends:hover{
+    cursor: pointer;
+    color: #155b91;
+}
+
+
+
+/*=============================================
+=                 Add Friends                 =
+=============================================*/
+
+.add-friends-wrapper{
+    height: 250px;
+    width: 300px;
+    border: 2px solid #155b91;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: #2488d4;
+}
+
+.add-friends-window{
+    height: 180px;
+    width: 280px;
+    border: 3px solid #155b91;
+    background-color: #2ea2fb;
+    overflow: auto;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.add-friends-window > form{
+    margin-left: 10px;
+}
+
+.add-friends-window > form > label{
+    width: 250px;
+}
+
+.add-friends-window > form > input{
+    width: 250px;
+}
+
+.add-friends-window > form > textarea{
+    width: 240px;
+    resize: none;
+}
+
+.close-btn-addFriends-div{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+.close-btn-addFriends{
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ff0000;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.close-btn-addFriends:hover{
+    cursor: pointer;
+    color: #155b91;
 }
 
 /*=============================================

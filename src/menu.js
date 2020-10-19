@@ -5,19 +5,41 @@ const closeBtn = document.querySelector(".close-btn-menu");
 const showBtn = document.querySelector(".show-btn");
 const showBtni = document.querySelector(".show-menu-div > button > i");
 const menu = document.querySelector(".menu");
+//*Chat
 const chatWrapper = document.querySelector(".chat-wrapper");
 const chatWindow = document.querySelector(".chat-window");
 const formChat = document.querySelector(".form-div-chat");
-const closeBtnChat = document.querySelector(".close-btn-chat-div");
+const closeBtnChat = document.querySelector(".close-btn-chat");
+//*Friends
+const friendsWrapper = document.querySelector(".friends-wrapper");
+const friendsWindow = document.querySelector(".friends-window");
+const closeBtnFriends = document.querySelector(".close-btn-friends");
+//*Add Friends
+const addFriendsWrapper = document.querySelector(".add-friends-wrapper");
+const closeBtnAddFriends = document.querySelector(".close-btn-addFriends");
+const addFriendsWindow = document.querySelector(".add-friends-window");
+const formAddFriends = document.querySelector(".addFriends-form");
 
-function btnsEvent() {
+
+function menuBtnsEvent() {
     menu.addEventListener("click", e => {
         if (e.target.classList.contains("chatBtn")) {
             chatWindow.classList.remove("hideMe");
-            chatWrapper.classList.remove("close-chat");
+            chatWrapper.classList.remove("close-tab");
             closeBtnChat.classList.remove("hideMe");
             formChat.classList.remove("hideMe");
             chatWrapper.classList.remove("hideMe");
+        } else if (e.target.classList.contains("friendsBtn")) {
+            friendsWindow.classList.remove("hideMe");
+            friendsWrapper.classList.remove("hideMe");
+            closeBtnFriends.classList.remove("hideMe");
+            friendsWrapper.classList.remove("close-tab");
+        } else if ((e.target.classList.contains("addFriendsBtn"))) {
+            addFriendsWindow.classList.remove("hideMe");
+            addFriendsWrapper.classList.remove("close-tab");
+            closeBtnAddFriends.classList.remove("hideMe");
+            formAddFriends.classList.remove("hideMe");
+            addFriendsWrapper.classList.remove("hideMe");
         }
     })
 };
@@ -67,4 +89,4 @@ function showMenuEvent() {
 
 
 
-export { btnsEvent, closeBtnEvent, showMenuEvent }
+export { menuBtnsEvent, closeBtnEvent, showMenuEvent }

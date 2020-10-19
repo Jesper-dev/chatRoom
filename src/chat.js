@@ -1,5 +1,5 @@
 const chatWrapper = document.querySelector(".chat-wrapper");
-const closeBtnChat = document.querySelector(".close-btn-chat-div");
+const closeBtnChat = document.querySelector(".close-btn-chat");
 const chatWindow = document.querySelector(".chat-window");
 const formChat = document.querySelector(".form-div-chat");
 
@@ -9,7 +9,7 @@ function closeChat() {
         formChat.classList.add("hideMe");
         closeBtnChat.classList.add("hideMe");
 
-        chatWrapper.classList.add("close-chat");
+        chatWrapper.classList.add("close-tab");
         setTimeout(() => {
             chatWrapper.classList.add("hideMe");
         }, 1000)

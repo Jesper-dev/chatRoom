@@ -1,11 +1,17 @@
 import "./menu";
 import "./chat"
-import { btnsEvent, closeBtnEvent, showMenuEvent } from "./menu";
+import "./friends";
+import "./addFriends"
+import { menuBtnsEvent, closeBtnEvent, showMenuEvent } from "./menu";
 import { closeChat } from "./chat";
+import { closeFriends } from "./friends";
+import { closeAddFriends } from "./addFriends"
 
 
-btnsEvent();
+menuBtnsEvent();
 closeBtnEvent();
 showMenuEvent();
 closeChat();
+closeFriends();
+closeAddFriends();
 
