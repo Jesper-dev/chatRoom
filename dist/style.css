@@ -27,6 +27,11 @@ nav{
     display: none !important;
 }
 
+
+/*=============================================
+=               Navigation menu               =
+=============================================*/
+
 .flex-container-nav{
     padding-top: 5px;
     width: 250px;
@@ -50,6 +55,14 @@ nav{
     text-decoration: none;
     color: #ffffff;
     font-size: 17px;
+}
+
+.github{
+    color: #000000 !important;
+}
+
+.github > i:hover{
+    color: #ffffff;
 }
 
 header > h1{
@@ -87,6 +100,23 @@ header > h1 > span{
     transition: all 1s;
 }
 
+.menu-close-height{
+    height: 40px;
+    transition: all 1s;
+}
+
+.menu-show{
+    width: 500px !important;
+    transition: all 1s;
+    box-shadow: 7px 8px 10px 3px #0e3f64;
+}
+
+.menu-show-height{
+    height: 400px !important;
+    transition: all 1s ease-out;
+    box-shadow: 7px 8px 10px 3px #0e3f64;
+}
+
 .show-btn{
     font-size: 20px;
     width: 60px;
@@ -94,17 +124,13 @@ header > h1 > span{
     color: #30ff02;
     background-color: #2488d4;
     border: 1px solid #155b91;
+    box-shadow: 3px 4px 5px 1px #0e3f64;
     outline: none;
 }
 
 .show-btn:hover{
     cursor: pointer;
-}
-
-.show-btn-clicked{
-    width: 500px;
-    transition: all 1s;
-    cursor: pointer;
+    color: #155b91;
 }
 
 .close-btn-div{
@@ -125,10 +151,10 @@ header > h1 > span{
 
 .close-btn:hover{
     cursor: pointer;
-    color: #000000;
+    color: #155b91;
 }
 
-.btn{
+.menu-btn{
     height: 50px;
     width: 200px;
     outline: none;
@@ -141,7 +167,7 @@ header > h1 > span{
     box-shadow: 5px 5px 8px 3px #0e3f64;
 }
 
-.btn:hover{
+.menu-btn:hover{
     cursor: pointer;
     width: 400px;
     transition: width 1s;
@@ -149,10 +175,15 @@ header > h1 > span{
     border: 2px solid #eeeeee;
 }
 
-.btn-out{
+.menu-btn-out{
     width: 200px;
     transition: width 1s;
 }
+
+
+/*=============================================
+=                 Keyframes                   =
+=============================================*/
 
 @keyframes colorPulse{
     0%{
