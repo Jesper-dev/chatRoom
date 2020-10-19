@@ -280,6 +280,14 @@ header > h1 > span{
     color: #155b91;
 }
 
+
+/* Css style for closing the chat anim */
+.close-chat{
+    width: 50px;
+    height: 50px;
+    transition: all 1s;
+}
+
 /*=============================================
 =                 Keyframes                   =
 =============================================*/

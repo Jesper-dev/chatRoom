@@ -1,17 +1,18 @@
-import "../dist/style.css"
+import "../dist/style.css";
 
 const btns = document.querySelectorAll(".menu-btn");
 const closeBtn = document.querySelector(".close-btn-menu");
 const showBtn = document.querySelector(".show-btn");
 const showBtni = document.querySelector(".show-menu-div > button > i");
 const menu = document.querySelector(".menu");
+const chatWrapper = document.querySelector(".chat-wrapper");
 
 function btnsEvent() {
-    for (let i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("mouseout", e => {
-            // e.target.classList.add("button-out")
-        })
-    };
+    menu.addEventListener("click", e => {
+        if (e.target.classList.contains("chatBtn")) {
+            chatWrapper.classList.remove("hideMe");
+        }
+    })
 };
 
 function closeBtnEvent() {
