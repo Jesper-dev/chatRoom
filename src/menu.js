@@ -1,7 +1,7 @@
 import "../dist/style.css"
 
 const btns = document.querySelectorAll(".menu-btn");
-const closeBtn = document.querySelector(".close-btn");
+const closeBtn = document.querySelector(".close-btn-menu");
 const showBtn = document.querySelector(".show-btn");
 const showBtni = document.querySelector(".show-menu-div > button > i");
 const menu = document.querySelector(".menu");

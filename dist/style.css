@@ -27,6 +27,18 @@ nav{
     display: none !important;
 }
 
+main{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.content-wrapper{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: 100%;
+}
+
 
 /*=============================================
 =               Navigation menu               =
@@ -74,9 +86,7 @@ header > h1{
 header > h1 > span{
     color: #ffffff;
     font-size: 46px;
-    animation: colorPulse 2s ease-in-out infinite alternate;
-   
-    
+    animation: colorPulse 2s ease-in-out infinite alternate; 
 }
 
 
@@ -86,6 +96,7 @@ header > h1 > span{
 
 .menu{
     border: 2px solid #155b91;
+    border-radius: 10px;
     box-shadow: 7px 8px 10px 3px #0e3f64;
     width: 500px;
     height: 400px;
@@ -93,6 +104,12 @@ header > h1 > span{
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
+    justify-self: flex-start;
+}
+
+.show-menu-div{
+    height: 40px;
+    justify-self: flex-start;
 }
 
 .menu-close{
@@ -107,12 +124,14 @@ header > h1 > span{
 
 .menu-show{
     width: 500px !important;
+    border-radius: 10px;
     transition: all 1s;
     box-shadow: 7px 8px 10px 3px #0e3f64;
 }
 
 .menu-show-height{
     height: 400px !important;
+    border-radius: 10px;
     transition: all 1s ease-out;
     box-shadow: 7px 8px 10px 3px #0e3f64;
 }
@@ -133,13 +152,13 @@ header > h1 > span{
     color: #155b91;
 }
 
-.close-btn-div{
+.close-btn-menu-div{
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
 }
 
-.close-btn{
+.close-btn-menu{
     font-size: 24px;
     text-transform: uppercase;
     text-decoration: none;
@@ -149,7 +168,7 @@ header > h1 > span{
     outline: none;
 }
 
-.close-btn:hover{
+.close-btn-menu:hover{
     cursor: pointer;
     color: #155b91;
 }
@@ -180,6 +199,86 @@ header > h1 > span{
     transition: width 1s;
 }
 
+
+/*=============================================
+=                 chat css                    =
+=============================================*/
+
+.chat-wrapper{
+    width: 600px;
+    height: 700px;
+    margin: 0 auto;
+    border: 2px solid #155b91;
+    border-radius: 10px;
+    background-color: #2488d4;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.chat-window{
+    border: 3px solid #155b91;
+    background-color: #2ea2fb;
+    width: 550px;
+    height: 620px;
+    justify-self: center;
+    align-self: center;
+}
+
+.form-div-chat{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.form-div-chat > form{
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-div-chat > form > input[type=text]{
+    width: 450px;
+    height: 30px;
+    outline: none;
+    background-color: #2ea2fb;
+    border: 1px solid #155b91;
+    border-radius: 5px;
+}
+
+.form-div-chat > form > input[type=text]:focus{
+    border: 2px solid #092235;
+}
+
+.form-div-chat > form > input[type=submit]{
+    letter-spacing: 2px;
+    border-radius: 20px;
+    color: #30ff02;
+    background: transparent;
+    border: 2px solid #155b91;
+}
+
+.close-btn-chat-div{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+.close-btn-chat{
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ff0000;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.close-btn-chat:hover{
+    cursor: pointer;
+    color: #155b91;
+}
 
 /*=============================================
 =                 Keyframes                   =
