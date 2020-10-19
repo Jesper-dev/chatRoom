@@ -143,6 +143,7 @@ header > h1 > span{
     color: #30ff02;
     background-color: #2488d4;
     border: 1px solid #155b91;
+    border-radius: 10px;
     box-shadow: 3px 4px 5px 1px #0e3f64;
     outline: none;
 }
@@ -213,6 +214,7 @@ header > h1 > span{
     background-color: #2488d4;
     display: flex;
     flex-flow: column nowrap;
+    transition: all 2s;
 }
 
 .chat-window{
@@ -256,6 +258,12 @@ header > h1 > span{
     color: #30ff02;
     background: transparent;
     border: 2px solid #155b91;
+}
+
+.form-div-chat > form > input[type=submit]:hover{
+    cursor: pointer;
+    color: #155b91;
+    border: 2px solid #30ff02;
 }
 
 .close-btn-chat-div{

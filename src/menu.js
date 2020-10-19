@@ -6,10 +6,17 @@ const showBtn = document.querySelector(".show-btn");
 const showBtni = document.querySelector(".show-menu-div > button > i");
 const menu = document.querySelector(".menu");
 const chatWrapper = document.querySelector(".chat-wrapper");
+const chatWindow = document.querySelector(".chat-window");
+const formChat = document.querySelector(".form-div-chat");
+const closeBtnChat = document.querySelector(".close-btn-chat-div");
 
 function btnsEvent() {
     menu.addEventListener("click", e => {
         if (e.target.classList.contains("chatBtn")) {
+            chatWindow.classList.remove("hideMe");
+            chatWrapper.classList.remove("close-chat");
+            closeBtnChat.classList.remove("hideMe");
+            formChat.classList.remove("hideMe");
             chatWrapper.classList.remove("hideMe");
         }
     })
