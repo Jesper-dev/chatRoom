@@ -78,7 +78,7 @@
             </div>
 
             <!-- Add friends tab -->
-            <div class="add-friends-wrapper">
+            <div class="add-friends-wrapper hideMe">
                 <div class="close-btn-addFriends-div">
                     <button class="close-btn-addFriends">close</button>
                 </div>
@@ -102,7 +102,33 @@
         </div>
 
     </main>
+    <script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js" def></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js" defer></script>
 
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js" defer></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        let firebaseConfig = {
+            apiKey: "AIzaSyB5yCQqg5i2tPImOwD1z3fadoN1wO1O2XM",
+            authDomain: "chatroom-9bbc1.firebaseapp.com",
+            databaseURL: "https://chatroom-9bbc1.firebaseio.com",
+            projectId: "chatroom-9bbc1",
+            storageBucket: "chatroom-9bbc1.appspot.com",
+            messagingSenderId: "698059988244",
+            appId: "1:698059988244:web:dfae71f9eb1214c1f87601",
+            measurementId: "G-8Z2Z9YVHVL"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        const db = firebase.firestore();
+    </script>
 </body>
 
 </html>

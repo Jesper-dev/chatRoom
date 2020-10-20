@@ -5,7 +5,7 @@ import "./addFriends"
 import { menuBtnsEvent, closeBtnEvent, showMenuEvent } from "./menu";
 import { closeChat } from "./chat";
 import { closeFriends } from "./friends";
-import { closeAddFriends, addedFriendPopupFunc } from "./addFriends"
+import { closeAddFriends, addFriends } from "./addFriends"
 
 
 menuBtnsEvent();
@@ -14,5 +14,5 @@ showMenuEvent();
 closeChat();
 closeFriends();
 closeAddFriends();
-addedFriendPopupFunc();
+addFriends();
 
