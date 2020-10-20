@@ -7,6 +7,7 @@
     <title>chatRoom</title>
     <script src="assets/bundle.js" defer></script>
     <script src="https://kit.fontawesome.com/a71ac1579c.js" crossorigin="anonymous" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -77,19 +78,19 @@
             </div>
 
             <!-- Add friends tab -->
-            <div class="add-friends-wrapper hideMe">
+            <div class="add-friends-wrapper">
                 <div class="close-btn-addFriends-div">
                     <button class="close-btn-addFriends">close</button>
                 </div>
                 <div class="add-friends-window">
                     <form class="addFriends-form">
-                        <label for="name">Name:</label>
-                        <input type="name" name="name" id="name">
+                        <label for="text">Name:</label>
+                        <input type="text" name="name" id="name">
 
                         <label for="desc">Desc:</label>
-                        <textarea name="desc" id="desc" cols="20" rows="5"></textarea>
+                        <textarea name="desc" id="desc" cols="25" rows="5"></textarea>
 
-                        <input type="submit">
+                        <input type="submit" value="add friend">
                     </form>
                 </div>
             </div>

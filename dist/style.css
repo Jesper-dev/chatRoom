@@ -5,6 +5,7 @@ body{
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 header{
@@ -290,7 +291,7 @@ header > h1 > span{
 }
 
 
-/* Css style for closing the chat anim */
+/* Css style for closing the tab anim */
 .close-tab{
     width: 50px !important;
     height: 50px !important;
@@ -377,17 +378,36 @@ header > h1 > span{
     margin-left: 10px;
 }
 
+.add-friends-window > form > label,
+.add-friends-window > form > input {
+    width: 250px;
+}
+
+.add-friends-window > form > input[type="submit"]{
+    color: #30ff02;
+    text-transform: uppercase;
+    width: 100px;
+}
+
 .add-friends-window > form > label{
-    width: 250px;
+    color: #30ff02;
+    font-size: 18px;
 }
 
-.add-friends-window > form > input{
-    width: 250px;
-}
-
+.add-friends-window > form > input,
 .add-friends-window > form > textarea{
-    width: 240px;
+    outline: none;
+    background-color: #2488d4;
+    border: 2px solid #155b91;
+    border-radius: 5px;
+    width: 250px;
     resize: none;
+}
+
+.add-friends-window > form > input:focus,
+.add-friends-window > form > textarea:focus{
+    background-color: #2488d4;
+    border: 2px solid #092235;
 }
 
 .close-btn-addFriends-div{
