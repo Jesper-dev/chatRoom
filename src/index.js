@@ -1,3 +1,5 @@
+
+import "regenerator-runtime/runtime.js";
 import "./menu";
 import "./chat"
 import "./friends";
@@ -6,7 +8,6 @@ import { menuBtnsEvent, closeBtnEvent, showMenuEvent } from "./menu";
 import { closeChat } from "./chat";
 import { closeFriends } from "./friends";
 import { closeAddFriends, addFriends } from "./addFriends"
-
 
 menuBtnsEvent();
 closeBtnEvent();
