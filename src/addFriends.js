@@ -25,16 +25,27 @@ function addedFriendPopupFunc() {
         e.preventDefault();
 
         if (addFriendName.value === "") {
-            console.log("Something is wrong")
-        } else {
-            let friendName = addFriendName.value;
             let html = `
-                <span class="added-friend-span">${friendName} just got added as a friend!</span>
+                <span class="error">Name is empty</span>
             `;
+
             addedFriendPopup.innerHTML += html;
+
             setTimeout(() => {
                 addedFriendPopup.innerHTML = "";
-            }, 5000)
+            }, 3000)
+        } else {
+
+            let friendName = addFriendName.value;
+            let html = `
+                <span class="success">${friendName} just got added as a friend!</span>
+            `;
+
+            addedFriendPopup.innerHTML += html;
+
+            setTimeout(() => {
+                addedFriendPopup.innerHTML = "";
+            }, 3000)
         }
 
         formAddFriends.reset();
