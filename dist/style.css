@@ -353,7 +353,7 @@ header > h1 > span{
 =============================================*/
 
 .add-friends-wrapper{
-    height: 250px;
+    height: 300px;
     width: 300px;
     border: 2px solid #155b91;
     display: flex;
@@ -389,6 +389,12 @@ header > h1 > span{
     width: 100px;
 }
 
+.add-friends-window > form > input[type="submit"]:hover{
+    cursor: pointer;
+    color: #155b91;
+    border: 2px solid #30ff02;
+}
+
 .add-friends-window > form > label{
     color: #30ff02;
     font-size: 18px;
@@ -408,6 +414,17 @@ header > h1 > span{
 .add-friends-window > form > textarea:focus{
     background-color: #2488d4;
     border: 2px solid #092235;
+}
+
+.added-friend-popup{
+    margin-top: 10px;
+    width: 200px;
+    height: 40px;
+}
+
+.added-friend-span{
+    color: #30ff02;
+    font-size: 18px;
 }
 
 .close-btn-addFriends-div{

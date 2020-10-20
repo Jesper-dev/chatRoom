@@ -3,6 +3,9 @@ const closeBtnAddFriends = document.querySelector(".close-btn-addFriends");
 const addFriendsWindow = document.querySelector(".add-friends-window");
 const formAddFriends = document.querySelector(".addFriends-form");
 
+const addedFriendPopup = document.querySelector(".added-friend-popup");
+const addFriendName = document.querySelector("#name");
+
 function closeAddFriends() {
     closeBtnAddFriends.addEventListener("click", () => {
         addFriendsWindow.classList.add("hideMe");
@@ -17,5 +20,27 @@ function closeAddFriends() {
     });
 }
 
+function addedFriendPopupFunc() {
+    formAddFriends.addEventListener("submit", e => {
+        e.preventDefault();
 
-export { closeAddFriends }
+        if (addFriendName.value === "") {
+            console.log("Something is wrong")
+        } else {
+            let friendName = addFriendName.value;
+            let html = `
+                <span class="added-friend-span">${friendName} just got added as a friend!</span>
+            `;
+            addedFriendPopup.innerHTML += html;
+            setTimeout(() => {
+                addedFriendPopup.innerHTML = "";
+            }, 5000)
+        }
+
+        formAddFriends.reset();
+
+    })
+}
+
+
+export { closeAddFriends, addedFriendPopupFunc }
