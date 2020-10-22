@@ -5,6 +5,23 @@ const addFriendsWindow = document.querySelector(".add-friends-window");
 const formAddFriends = document.querySelector(".addFriends-form");
 const addedFriendPopup = document.querySelector(".added-friend-popup");
 
+import firebase from "firebase/app"
+require("firebase/firestore");
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+firebase.initializeApp({
+    apiKey: "AIzaSyB5yCQqg5i2tPImOwD1z3fadoN1wO1O2XM",
+    authDomain: "chatroom-9bbc1.firebaseapp.com",
+    projectId: "chatroom-9bbc1",
+    databaseURL: "https://chatroom-9bbc1.firebaseio.com",
+    storageBucket: "chatroom-9bbc1.appspot.com",
+    messagingSenderId: "698059988244",
+    appId: "1:698059988244:web:dfae71f9eb1214c1f87601",
+    measurementId: "G-8Z2Z9YVHVL"
+})
+
+let db = firebase.firestore();
+
 class Friend {
     constructor(name, desc) {
         this.name = name;
@@ -13,11 +30,11 @@ class Friend {
         this.unsub;
     }
     //*En metod där vi addar en vän.
-    async addFriend(userFriend) {
+    async addFriend(friendName, friendDesc) {
         const now = new Date();
         const friend = {
-            name: this.name,
-            desc: this.desc,
+            friendName: this.friendName,
+            friendDesc: this.friendDesc,
             added_at: firebase.firestore.Timestamp.fromDate(now)
         };
 
@@ -42,7 +59,7 @@ function addFriends() {
     formAddFriends.addEventListener("submit", e => {
         e.preventDefault()
 
-        if (addFriendName.value === "") {
+        if (formAddFriends.name.value === " ") {
             let html = `
                 <span class="error">Name is empty</span>
             `;
@@ -54,12 +71,16 @@ function addFriends() {
             }, 3000)
 
         } else {
+
             let friendName = formAddFriends.name.value.trim();
             let friendDesc = formAddFriends.desc.value.trim();
 
-            friend = new Friend(friendName, friendDesc)
-            friend.addFriend(friend)
-                .then(() => formAddFriends.reset())
+            let newFriend = new Friend(friendName, friendDesc)
+
+            newFriend.addFriend(friendName, friendDesc)
+            db.collection("friends").add({
+                newFriend
+            })
                 .catch(err => console.log(err));
 
             let html = `
