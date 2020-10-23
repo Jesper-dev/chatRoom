@@ -4,6 +4,7 @@ const closeBtnAddFriends = document.querySelector(".close-btn-addFriends");
 const addFriendsWindow = document.querySelector(".add-friends-window");
 const formAddFriends = document.querySelector(".addFriends-form");
 const addedFriendPopup = document.querySelector(".added-friend-popup");
+let friendInput = document.querySelector("#name");
 
 import firebase from "firebase/app"
 require("firebase/firestore");
@@ -61,10 +62,14 @@ function addFriends() {
     formAddFriends.addEventListener("submit", e => {
 
         e.preventDefault()
+        friendInput = formAddFriends.name.value;
+        let newFriendName = formAddFriends.name.value.trim();
+        let newFriendDesc = formAddFriends.desc.value.trim();
 
-        if (formAddFriends.name.value === " ") {
+        if ((formAddFriends.name.value === "") || (formAddFriends.desc.value === "")) {
+
             let html = `
-                <span class="error">Name is empty</span>
+                <span class="error">Something is wrong...</span>
             `;
 
             addedFriendPopup.innerHTML += html;
@@ -74,13 +79,21 @@ function addFriends() {
             }, 3000)
 
             formAddFriends.reset()
-        } else {
-            let newFriendName = formAddFriends.name.value.trim();
-            let newFriendDesc = formAddFriends.desc.value.trim();
 
-            //user.addFriend(newFriendName, newFriendDesc)
-            //.then(() => formAddFriends.reset())
-            //.catch(err => console.log(err));
+        } else {
+            user.addFriend(newFriendName, newFriendDesc)
+                .then(() => formAddFriends.reset())
+                .catch(err => console.log(err));
+
+            let html = `
+                <span class="success">Friend Added</span>
+            `;
+
+            addedFriendPopup.innerHTML += html;
+
+            setTimeout(() => {
+                addedFriendPopup.innerHTML = "";
+            }, 3000)
         }
 
     })
