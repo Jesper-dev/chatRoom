@@ -117,4 +117,5 @@ function closeAddFriends() {
 //*Class instances
 let user = new User("Jesper", "King")
 
-export { closeAddFriends, addFriends }
+export { user as default }
+export { closeAddFriends, addFriends, db }
