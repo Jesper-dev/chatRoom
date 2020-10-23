@@ -22,7 +22,7 @@ firebase.initializeApp({
 
 let db = firebase.firestore();
 
-class Friend {
+class User {
     constructor(name, desc) {
         this.name = name;
         this.desc = desc;
@@ -32,15 +32,16 @@ class Friend {
     //*En metod där vi addar en vän.
     async addFriend(friendName, friendDesc) {
         const now = new Date();
-        const friend = {
-            friendName: this.friendName,
-            friendDesc: this.friendDesc,
+        const newFriend = {
+            friendName,
+            friendDesc,
             added_at: firebase.firestore.Timestamp.fromDate(now)
         };
 
-        const response = await this.friends.add(friend);
+        const response = await this.friends.add(newFriend);
         return response;
     }
+
     //*En metod där vi hämtar vänner.
     getFriends(callback) {
         this.unsub = this.friends
@@ -56,7 +57,9 @@ class Friend {
 }
 
 function addFriends() {
+
     formAddFriends.addEventListener("submit", e => {
+
         e.preventDefault()
 
         if (formAddFriends.name.value === " ") {
@@ -70,31 +73,16 @@ function addFriends() {
                 addedFriendPopup.innerHTML = "";
             }, 3000)
 
+            formAddFriends.reset()
         } else {
+            let newFriendName = formAddFriends.name.value.trim();
+            let newFriendDesc = formAddFriends.desc.value.trim();
 
-            let friendName = formAddFriends.name.value.trim();
-            let friendDesc = formAddFriends.desc.value.trim();
-
-            let newFriend = new Friend(friendName, friendDesc)
-
-            newFriend.addFriend(friendName, friendDesc)
-            db.collection("friends").add({
-                newFriend
-            })
-                .catch(err => console.log(err));
-
-            let html = `
-                <span class="success">${friendName} just got added as a friend!</span>
-            `;
-
-            addedFriendPopup.innerHTML += html;
-
-            setTimeout(() => {
-                addedFriendPopup.innerHTML = "";
-            }, 3000)
+            //user.addFriend(newFriendName, newFriendDesc)
+            //.then(() => formAddFriends.reset())
+            //.catch(err => console.log(err));
         }
 
-        formAddFriends.reset();
     })
 }
 
@@ -113,6 +101,7 @@ function closeAddFriends() {
     });
 }
 
-
+//*Class instances
+let user = new User("Jesper", "King")
 
 export { closeAddFriends, addFriends }
